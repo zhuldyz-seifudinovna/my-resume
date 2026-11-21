@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-   <title>My Website</title>
+   <title>Бронь столика</title>
+ </head>
+ <body>
+  <header>
+    <h1>Basilic</h1>
+  </header>
     <form>
       <div>
         <label for="name">Zhuldyz</label>
         <input type=""text" id="name" value="Zhuldyz"/>
         <p>
-        <label for="email">Почта</label>
-        <input type=""email" id="email" value="zhuldyz@mail.kz"/>
-        </p>
-        <p>
-         <label for="password">Пароль</label>
-         <input type="password" id="password" value="****"/>
-        </p>
-        <p>
           <label for="tel">Телефон</label> 
          <input type=""tel" id="tel" value="87716667788"/>
+        </p>
+        <p>
+        <label for="email">Почта</label>
+        <input type=""email" id="email" value="zhuldyz@mail.kz"/>
         </p>
         <p>
           <label for="date">Дата</label>
         <input type=""date" id="date" value="2026.11.21"/>
         </p>
-     </div/>
-     <div>
-         <label for="desc">Description</label>  
-         <textarea id="desc" rows="5"></textarea>     
+        <p>
+          <label for="time">Время</label>
+        <input type=""time" id="time" value="19:00"/>
+        </p>
+        <p>
+          <label for="number">Количество гостей</label>
+          <input type="number" id="number" value="10"/>
+        </p>
+         <div>
+          <label for="povod">Повод</label>
+           <select id="povod">
+            <option>Просто поужинать</option>
+            <option>День рождения</option>
+            <option>Деловая встреча</option>
+            <option>Свидание</option>
+           </select> 
+        </div>  
+
+        <p>Где сидеть?</p>
+        <div>
+          <label for="zal">Зал</label>
+           <input type="radio" id="zal" value="Зал" name="где сидеть"/>
+        </div>  
+        <div>
+          <label for="terassa">Терасса</label>
+           <input type="radio" id="terassa" value="Терасса" name="где сидеть"/>
+        </div>  
+        <div>
+          <label for="VIP">VIP комната</label>
+           <input type="radio" id="VIP" value="VIP комната" name="где сидеть"/>
+        </div>  
+        
+          <p>Пожелания</p>
+      <div>
+          <label for="guests">Детский стульчик</label>
+           <input type="checkbox" id="guests"/>
+     </div>
+      <div>
+          <label for="guests">Столик от окна</label>
+           <input type="checkbox" id="guests"/>
+     </div>
+      <div>
+          <label for="guests">Торт от кафе</label>
+           <input type="checkbox" id="guests"/>
      </div>
 
-    
-      <div>
-         <label for="city">City</label>  
-         <select id="city">
-          <option>London</option>
-          <option>Paris</option>
-          <option>Astana</option>
-         </select>  
-      </div>
-     
+    <div>
+          <label for="coment">Комментарий</label>
+           <textarea id="coment" rows="3"></textarea>
+    </div>
 
-      <button>Отправить</button>
+    <input type="checkbox" id="agree" />
+     <label for="agree">Согласен(на)…</label>
+
+      <button>Забронировать</button>
     </form>
+    <p></p>
+    <footer>ZHULDYZ</footer>
     </body>
 </html>
